@@ -89,22 +89,16 @@ export default {
       value: false
     }
   },
-  mounted () {
-    document.addEventListener('keyup', this.onEnterPressed)
-  },
-  destroyed () {
-    document.removeEventListener('keyup', this.onEnterPressed)
-  },
   methods: {
     onEnterPressed (e) {
       if (e.keyCode === 13) {
-        e.stopPropagation()
+        e.stopPropagation();
         this.choose(true)
       }
     },
     choose (value) {
-      this.$emit('result', value)
-      this.value = value
+      this.$emit('result', value);
+      this.value = value;
       this.$destroy()
     },
     change (res) {
