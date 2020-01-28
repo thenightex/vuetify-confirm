@@ -1,7 +1,5 @@
 'use strict';
 
-var lib = require('vuetify/lib');
-
 //
 //
 //
@@ -35,17 +33,6 @@ var lib = require('vuetify/lib');
 //
 
 var script = {
-  components: {
-    VCard: lib.VCard,
-    VCardActions: lib.VCardActions,
-    VCardText: lib.VCardText,
-    VDialog: lib.VDialog,
-    VIcon: lib.VIcon,
-    VToolbar: lib.VToolbar,
-    VToolbarTitle: lib.VToolbarTitle,
-    VSpacer: lib.VSpacer,
-    VBtn: lib.VBtn
-  },
   props: {
     buttonTrueText: {
       type: String,

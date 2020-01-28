@@ -8,3 +8,4 @@ package-lock.json
 *.tgz
 build/related
 
+.idea/

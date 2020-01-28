@@ -1,5 +1,3 @@
-import { VBtn, VCard, VCardActions, VCardText, VDialog, VIcon, VSpacer, VToolbar, VToolbarTitle } from 'vuetify/lib';
-
 //
 //
 //
@@ -33,17 +31,6 @@ import { VBtn, VCard, VCardActions, VCardText, VDialog, VIcon, VSpacer, VToolbar
 //
 
 var script = {
-  components: {
-    VCard: VCard,
-    VCardActions: VCardActions,
-    VCardText: VCardText,
-    VDialog: VDialog,
-    VIcon: VIcon,
-    VToolbar: VToolbar,
-    VToolbarTitle: VToolbarTitle,
-    VSpacer: VSpacer,
-    VBtn: VBtn
-  },
   props: {
     buttonTrueText: {
       type: String,

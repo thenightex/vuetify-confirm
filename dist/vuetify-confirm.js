@@ -1,8 +1,8 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('vuetify/lib')) :
-	typeof define === 'function' && define.amd ? define(['vuetify/lib'], factory) :
-	(global.vuetifyConfirm = factory(global.Vue.options.components));
-}(this, (function (lib) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.vuetifyConfirm = factory());
+}(this, (function () { 'use strict';
 
 //
 //
@@ -37,17 +37,6 @@
 //
 
 var script = {
-  components: {
-    VCard: lib.VCard,
-    VCardActions: lib.VCardActions,
-    VCardText: lib.VCardText,
-    VDialog: lib.VDialog,
-    VIcon: lib.VIcon,
-    VToolbar: lib.VToolbar,
-    VToolbarTitle: lib.VToolbarTitle,
-    VSpacer: lib.VSpacer,
-    VBtn: lib.VBtn
-  },
   props: {
     buttonTrueText: {
       type: String,
