@@ -1,8 +1,8 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global.vuetifyConfirm = factory());
-}(this, (function () { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('vuetify/lib')) :
+	typeof define === 'function' && define.amd ? define(['vuetify/lib'], factory) :
+	(global.vuetifyConfirm = factory(global.Vue.options.components));
+}(this, (function (lib) { 'use strict';
 
 //
 //
@@ -37,6 +37,18 @@
 //
 
 var script = {
+  name: 'VuetifyConfirmDialog',
+  components: {
+    VCard: lib.VCard,
+    VCardActions: lib.VCardActions,
+    VCardText: lib.VCardText,
+    VDialog: lib.VDialog,
+    VIcon: lib.VIcon,
+    VToolbar: lib.VToolbar,
+    VToolbarTitle: lib.VToolbarTitle,
+    VSpacer: lib.VSpacer,
+    VBtn: lib.VBtn
+  },
   props: {
     buttonTrueText: {
       type: String,
@@ -239,7 +251,7 @@ var __vue_is_functional_template__ = false;
 
 /* style inject shadow dom */
 
-var __vue_component__ = normalizeComponent({ render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ }, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, undefined, undefined, undefined);
+var __vue_component__ = /*#__PURE__*/normalizeComponent({ render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ }, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, undefined, undefined, undefined);
 
 function Install(Vue, options) {
   if ( options === void 0 ) options = {};

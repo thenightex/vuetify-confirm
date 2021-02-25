@@ -1,3 +1,5 @@
+import { VBtn, VCard, VCardActions, VCardText, VDialog, VIcon, VSpacer, VToolbar, VToolbarTitle } from 'vuetify/lib';
+
 //
 //
 //
@@ -31,6 +33,18 @@
 //
 
 var script = {
+  name: 'VuetifyConfirmDialog',
+  components: {
+    VCard: VCard,
+    VCardActions: VCardActions,
+    VCardText: VCardText,
+    VDialog: VDialog,
+    VIcon: VIcon,
+    VToolbar: VToolbar,
+    VToolbarTitle: VToolbarTitle,
+    VSpacer: VSpacer,
+    VBtn: VBtn
+  },
   props: {
     buttonTrueText: {
       type: String,
@@ -233,7 +247,7 @@ var __vue_is_functional_template__ = false;
 
 /* style inject shadow dom */
 
-var __vue_component__ = normalizeComponent({ render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ }, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, undefined, undefined, undefined);
+var __vue_component__ = /*#__PURE__*/normalizeComponent({ render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ }, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, undefined, undefined, undefined);
 
 function Install(Vue, options) {
   if ( options === void 0 ) options = {};
